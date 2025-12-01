@@ -22,8 +22,7 @@ for line in input.split('\n') {
   }
 
   if dial < 0 && prev_dial != 0 {
-      part2 = part2 + 1;
-    }
+    part2 = part2 + 1;
   }
   
   part2 = part2 + (dial.abs() / 100);
