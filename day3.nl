@@ -2,35 +2,6 @@
 
 input = read;
 
-fn part1() {
-  result = 0;
-
-  for bank in input.split('\n') {
-    max = 0;
-    i = 0;
-    while i < #bank {
-      k = i + 1;
-
-      while k < #bank {
-        n = int("{bank[i]}{bank[k]}");
-
-        if n > max {
-          max = n;
-        }
-
-        k = k + 1;
-      }
-
-      i = i + 1;
-    } 
-
-    result = result + max;
-  }
-
-  print("part1 🎁: {result}");
-}
-
-
 fn find_left_most_digits(bank_slice) {
   indexes = {};
 
